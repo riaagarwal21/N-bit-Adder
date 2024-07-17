@@ -56,5 +56,6 @@ To get a local copy of the project, you can clone the repository using the below
       git clone https://github.com/riaagarwal21/N-bit-Adder
 
 ### Simulation Results
-![image](https://github.com/user-attachments/assets/656a87a3-b2d2-4190-bbaf-9b8ab1e52202)
+![image](https://github.com/user-attachments/assets/048d95c5-111d-43d7-a265-9b9b27e05a3b)
+
 
