@@ -7,6 +7,7 @@ The `adder_n` module is a parameterized n-bit adder designed in SystemVerilog. I
 - `adder_n.sv`: Main module implementing the n-bit adder.
 - `halfAdder.sv`: Module defining a half adder for adding the least significant bit.
 - `fullAdder.sv`: Module defining a full adder for adding bits beyond the least significant bit.
+- `tb_adder_n.sv`: Testbench module for verifying the functionality of `adder_n`.
 
 ## Design Overview
 
@@ -30,7 +31,23 @@ The `adder_n` module uses the following components:
   - Full adders are used iteratively for each subsequent bit, utilizing the `Carry` vector for carry propagation.
   - The `Cout` signal indicates if there is an overflow or carry out beyond the most significant bit.
 
-## Usage
+## Testbench (`tb_adder_n`)
+
+The testbench `tb_adder_n` verifies the functionality of the `adder_n` module by applying various test cases and comparing the expected output (`Sum`) with the actual output produced by the module.
+
+### Files
+
+- `tb_adder_n.sv`: Main testbench module.
+- `adder_n.sv`: Module under test (MUT).
+
+### Test Cases
+
+The testbench includes the following types of test cases:
+- **Basic Cases**: Tests with specific input values to verify basic addition.
+- **Edge Cases**: Tests with edge values to verify behavior at boundaries.
+- **Random Cases**: Tests with randomly generated input values to ensure robustness.
+
+### Usage
 
 To use the `adder_n` module in your SystemVerilog project, instantiate it and connect the `A`, `B`, and `Sum` ports accordingly. Ensure that `A` and `B` are of size `n`, and `Sum` will also be of size `n`.
 
@@ -38,6 +55,6 @@ To get a local copy of the project, you can clone the repository using the below
 
       git clone https://github.com/riaagarwal21/N-bit-Adder
 
-## Simulation Results
-![image](https://github.com/user-attachments/assets/ad4e0c28-f655-4c5d-b63d-76c80670554c)
+### Simulation Results
+![image](https://github.com/user-attachments/assets/656a87a3-b2d2-4190-bbaf-9b8ab1e52202)
 
